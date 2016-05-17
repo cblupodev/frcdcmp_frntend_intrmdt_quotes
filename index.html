@@ -2,18 +2,19 @@
 <html lang="en" >
 <head>
 <meta name='viewport' content='width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0' user-scalable='no'>
-<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
 <link rel='stylesheet' href='style.css'>
 <title>Random Quote Machine</title>
 </head>
 <md-content ng-app='myApp' ng-controller='MainController' ng-cloak ng-view layout-padding layout='row' layout-align='center center' flex-gt-sm='70' flex-offset-gt-sm='15'>
-   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
-   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
-   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
-   <!-- Angular Material Library -->
-   <script src="angular-material.min.js"></script>
-   <script src='script.js'></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+<!-- Angular Material Library -->
+<script src="angular-material.min.js"></script>
+<script src='script.js'></script>
+   <!--links to codepen and freecodeamp-->
    <div layout='column' flex>
       <div id='links' layout-align="start start" flex>
          <div layout='row'>
@@ -29,6 +30,7 @@
             <p>These are some of my favorite quotes I had collected during medical school I recently rediscovered via the wayback machine. I hope you enjoy them!</p>
          </header>
          <md-button class='md-raised md-primary' aria-label='new quote' ng-click='pickQuote();'>New Quote</md-button>
+         <!--quote card-->
          <md-content name='quotes' layout-padding md-whiteframe='4' layout-align="center center" flex>
                <blockquote>{{quote}}</blockquote>
                <cite >{{cite}}</cite>
